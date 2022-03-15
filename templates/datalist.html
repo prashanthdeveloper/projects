@@ -1,0 +1,15 @@
+{% for user in todos %}
+     <li>{{loop.index}}</li>
+  <li>{{user.title}}</li>
+     <li>{{user.description}}
+         <li>{{user.image}}
+         <div class="buttons">
+
+
+      <button><a href="/delete/{{user.sno}}">Delete</a>
+<button><a href="/update/{{user.sno}}">Delete</a></button>
+
+              </div>
+     </li>
+
+{% endfor %}
